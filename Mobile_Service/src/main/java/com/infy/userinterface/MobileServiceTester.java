@@ -34,7 +34,7 @@ public class MobileServiceTester {
 	public static void getServices(){
 		MobileService service = new MobileServiceImpl();
 		try {
-			List<ServiceReport> list = service.getServices(Status.REJECTED); 
+			List<ServiceReport> list = service.getServices(Status.COMPLETED); 
 			System.out.println("=================================");
 			System.out.println(" ID \t Brand \t\t Fee");
 			System.out.println("=================================");
