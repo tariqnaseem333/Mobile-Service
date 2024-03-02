@@ -1,0 +1,5 @@
+package com.infy.model;
+
+public class ServiceReport {
+	// will implement this class 
+}

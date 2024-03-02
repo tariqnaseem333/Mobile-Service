@@ -14,11 +14,8 @@ import com.infy.service.MobileServiceImpl;
 public class MobileServiceTester {
 	
 	public static void main(String[] args) {
-
-//		will implement this class
-			//registerRequest();
-			//getServices();
-
+		registerRequest();
+		getServices();
 	}
 	
 	public static void registerRequest(){
@@ -42,8 +39,7 @@ public class MobileServiceTester {
 			System.out.println(" ID \t Brand \t\t Fee");
 			System.out.println("=================================");
 			list.stream().forEach(obj->{
-//				will uncomment the below line when I have implemented the ServiceReport class
-//				System.out.println(obj.getServiceId()+"\t"+obj.getBrand()+"\t"+obj.getServiceFee()+" $");
+				System.out.println(obj.getServiceId()+"\t"+obj.getBrand()+"\t"+obj.getServiceFee()+" $");
 			});
 			System.out.println("=================================");
 		} catch (Exception e) {
