@@ -1,10 +1,5 @@
 
+o	java:S125"<This block of commented-out lines of code should be removed.b eea0e1f6922baadf606815a663007edeh
 –
-java:S1192$"bDefine a constant instead of duplicating this literal "=================================" 3 times.b e65007d7ca84fe658801a05e358af4b3h
-o	java:S125"<This block of commented-out lines of code should be removed.b eea0e1f6922baadf606815a663007edeh
-s
-java:S1854#"8Remove this useless assignment to local variable "list".8Î»ãİÜ1b e2c567c6b1a12b8f91670895f168f242h
-d
-java:S1481#")Remove this unused "list" local variable.8Î»ãİÜ1b 10ae9fc7d453b0dd525d0edf2ede7961h
-r
-java:S1854"7Remove this useless assignment to local variable "obj".8é†çİÜ1b 534f03f29fbd6bb1db8d4e0ebfe89fb4h
+java:S1192)"bDefine a constant instead of duplicating this literal "=================================" 3 times.b e65007d7ca84fe658801a05e358af4b3h
+v	java:S125."<This block of commented-out lines of code should be removed.8á×ïÒß1b c0395089b9737c905b3823a55090743ch

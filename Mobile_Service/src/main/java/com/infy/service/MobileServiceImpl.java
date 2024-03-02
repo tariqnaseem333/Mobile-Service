@@ -7,10 +7,12 @@ import com.infy.exception.MobileServiceException;
 import com.infy.model.ServiceReport;
 import com.infy.model.ServiceRequest;
 import com.infy.model.Status;
+import com.infy.validator.Validator;
 
 public class MobileServiceImpl implements MobileService{
 	
 	private MobileServiceDAO dao =  new MobileServiceDAOImpl();
+	private Validator validator=new Validator();
 
 	@Override
 	public ServiceRequest registerRequest(ServiceRequest service) throws MobileServiceException {

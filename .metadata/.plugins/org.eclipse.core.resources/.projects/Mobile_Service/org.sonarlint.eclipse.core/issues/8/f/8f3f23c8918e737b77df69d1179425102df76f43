@@ -1,0 +1,21 @@
+
+a
+java:S2447"-Null is returned but a "Boolean" is expected.b 37a6259cc0c1dae299a7866489dff0bdh
+`
+java:S1172",Remove this unused method parameter "brand".b 8c4d3a946a1fcde2ded7e17651fd0ed7h
+a
+java:S2447"-Null is returned but a "Boolean" is expected.b 37a6259cc0c1dae299a7866489dff0bdh
+a
+java:S1172"-Remove this unused method parameter "issues".b fe5fe0415fc3e0ff4942d8454f363d2ch
+a
+java:S2447"-Null is returned but a "Boolean" is expected.b 37a6259cc0c1dae299a7866489dff0bdh
+e
+java:S1172"1Remove this unused method parameter "iMEINumber".b e3516e52ec859caf9877758bf0c3bb7dh
+a
+java:S2447"-Null is returned but a "Boolean" is expected.b 37a6259cc0c1dae299a7866489dff0bdh
+h
+java:S1172"4Remove this unused method parameter "contactNumber".b b67d22be88956bd9e28fbc97dd3829ech
+a
+java:S2447%"-Null is returned but a "Boolean" is expected.b 37a6259cc0c1dae299a7866489dff0bdh
+g
+java:S1172$"3Remove this unused method parameter "customerName".b f505f31bb148d4f04f25892ca8ad2268h
