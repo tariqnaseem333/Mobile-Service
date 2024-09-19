@@ -3,66 +3,73 @@ package com.infy.validator;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.logging.LogFactory;
+
 import com.infy.exception.MobileServiceException;
 import com.infy.model.ServiceRequest;
 
 public class Validator {
 
-	public void validate(ServiceRequest service) throws MobileServiceException {	
-		if( !this.isValidBrand( service.getBrand() ) ) {
-			throw new MobileServiceException("Sorry! we do not provide service for this brand");
-		} else if( !this.isValidIssues( service.getIssues() ) ) {
-			throw new MobileServiceException("Please provide the device only if there are issues.");
-		} else if( !this.isValidIMEINumber( service.getiMEINumber() ) ) {
-			throw new MobileServiceException("Sorry! we’re not able to detect the IMEI number for this device.");
-		} else if( !this.isValidContactNumber( service.getContactNumber() ) ) {
-			throw new MobileServiceException("Please provide a valid contact number.");
-		} else if( !this.isValidCustomerName( service.getCustomerName() ) ) {
-			throw new MobileServiceException("Please provide a valid customer name.");
+	public void validate(ServiceRequest service) throws MobileServiceException{	
+		String errorMessage = null;
+		
+		if(!isValidBrand(service.getBrand()))
+			errorMessage = "Validator.INVALID_BRAND";
+		else if(!isValidIssues(service.getIssues()))
+			errorMessage = "Validator.INVALID_NO_OF_ISSUES";
+		else if(!isValidIMEINumber(service.getiMEINumber()))
+			errorMessage = "Validator.INVALID_IMEI_NUMBER";
+		else if(!isValidContactNumber(service.getContactNumber()))
+			errorMessage = "Validator.INVALID_CONTACT_NUMBER";
+		else if(!isValidCustomerName(service.getCustomerName()))
+			errorMessage = "Validator.INVALID_CUSTOMER_NAME";
+		
+		if(errorMessage != null) {
+			MobileServiceException exception = new MobileServiceException(errorMessage);
+			LogFactory.getLog(getClass()).error(exception.getMessage(), exception);
+			throw exception;
 		}
 	}	
 	
-//	validates the brand, brand should always start with a upper case alphabet 
-//	and can be followed by one or more alphabets (lower case or upper case) 
+	// validates the brand
+	// brand should always start with a upper case alphabet 
+	// and can be followed by one or more alphabets (lower case or upper case) 
 	public Boolean isValidBrand(String brand){
-		return brand.matches("([A-Z][A-Za-z]+)");
+		return brand.matches("[A-Z][A-Za-z]+");
 	}
 	
-//	validates the list of issues checks if the list is null or empty
+	// validates the list of issues
+	// checks if the list is null or empty
 	public Boolean isValidIssues(List<String> issues) {
-		return !issues.isEmpty();
+		return !(issues.isEmpty() || issues == null);
 	}
 
-//	validates the IMEINumber it should be a 16 digit number 
+	// validates the IMEINumber
+	// it should be a 16 digit number 
 	public Boolean isValidIMEINumber(Long iMEINumber) {
-		return (iMEINumber.toString().length() == 16);
+		return iMEINumber.toString().length() == 16;
 	}
 	
-//	validates the contact number should contain 10 numeric characters 
-//	and should not contain 10 repetitive characters
+	// validates the contact number
+	// should contain 10 numeric characters and should not contain 10 repetitive characters
 	public Boolean isValidContactNumber(Long contactNumber) {
-		boolean isAllDigitsSame = true;
-		List<Integer> contactNumberList = new ArrayList<>();
-		long N = contactNumber;
-		int rem = 0;
-		while( N > 0 ) {
-			rem = (int)(N % 10);
-			contactNumberList.add(rem);
-			N = N / 10;
-		}
-		for( int i = 0; i < contactNumberList.size(); i++ ) {
-			if( !contactNumberList.get(i).equals(contactNumberList.get(i+1)) ) {
-				isAllDigitsSame = false;
+		boolean isValid = false;
+		String[] contactNumberArr = contactNumber.toString().split("");
+		for(int i = 0; i < contactNumberArr.length-1; i++) {
+			if(!contactNumberArr[i].equals(contactNumberArr[i+1])) {
+				isValid = true;
 				break;
 			}
 		}
-		return (contactNumber.toString().length() == 10) && !isAllDigitsSame;
+		return (contactNumber.toString().length() == 10 && isValid);
 	}
 	
 	
-//	validates the customer name should contain at least one word and each word separated by a single space
-//	should contain at least one letter. The first letter of every word should be an upper case character 
+	// validates the customer name
+	// should contain at least one word and each word separated by a single space should contain at least one letter.
+	// the first letter of every word should be an upper case character 
 	public Boolean isValidCustomerName(String customerName) {
-		return customerName.matches("([A-Z][a-z]+)( [A-Z][a-z])*");
+		return customerName.matches("([A-Z][a-z]+)([ ][A-Z][a-z]+)*");
 	}
+	
 }

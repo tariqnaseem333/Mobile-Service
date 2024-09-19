@@ -3,6 +3,9 @@ package com.infy.service;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.commons.logging.LogFactory;
+
 import com.infy.dao.MobileServiceDAO;
 import com.infy.dao.MobileServiceDAOImpl;
 import com.infy.exception.MobileServiceException;
@@ -20,44 +23,59 @@ public class MobileServiceImpl implements MobileService{
 //  Methods
 	@Override
 	public ServiceRequest registerRequest(ServiceRequest service) throws MobileServiceException {
-		validator.validate(service);
-		float totalCost = this.calculateEstimateCost(service.getIssues());
-		if( totalCost <= 0 )
-			throw new MobileServiceException("Sorry, we do not provide that service");
-		service.setServiceFee(totalCost);
-		service.setStatus(Status.ACCEPTED);
-		service.setTimeOfRequest(LocalDateTime.now());
-		return dao.registerRequest(service);
+		try {
+			validator.validate(service);
+			Float estimateCost = calculateEstimateCost(service.getIssues());
+			if(estimateCost <= 0F)
+				throw new MobileServiceException("Service.INVALID_ISSUES");
+			service.setServiceFee(estimateCost);
+			service.setStatus(Status.ACCEPTED);
+			service.setTimeOfRequest(LocalDateTime.now());
+			return dao.registerRequest(service);
+		} catch (MobileServiceException exception) {
+			if(exception.getMessage().contains("Service"))
+				LogFactory.getLog(getClass()).error(exception.getMessage(), exception);
+			throw exception;
+		}
 	}
 
 	@Override
 	public Float calculateEstimateCost(List<String> issues) throws MobileServiceException {
-		float serviceFee = 0;
-		for( String issue : issues ) {
-			if( issue.equalsIgnoreCase("BATTERY") )
-				serviceFee = serviceFee + 10;
-			else if( issue.equalsIgnoreCase("CAMERA") )
-				serviceFee = serviceFee + 5;
-			else if( issue.equalsIgnoreCase("SCREEN") )
-				serviceFee = serviceFee + 15;
-			else 
-				serviceFee = serviceFee + 0;
+		float estimateCost = 0F;
+		for(String issue : issues) {
+			  if(issue.equalsIgnoreCase("BATTERY"))
+				  estimateCost = estimateCost + 10;
+			  else if(issue.equalsIgnoreCase("CAMERA"))
+				  estimateCost = estimateCost + 5;
+			  else if(issue.equalsIgnoreCase("SCREEN"))
+				  estimateCost = estimateCost + 15;
 		}
-		return serviceFee;
+		return estimateCost;
 	}
 
 	@Override
 	public List<ServiceReport> getServices(Status status) throws MobileServiceException {
-		List<ServiceReport> serviceReports = new ArrayList<>();
-		dao.getServices().forEach( service -> {
-			if( service.getStatus().equals(status) ) {
-				ServiceReport serviceReport = new ServiceReport( service.getServiceId(), service.getBrand(),service.getIssues(), service.getServiceFee());
-				serviceReports.add(serviceReport);
-			}
-		});
-		if(serviceReports.isEmpty())
-			throw new MobileServiceException("Sorry, we did not find any records for your query.");
-		return serviceReports;
+		try {
+			List<ServiceReport> servicesReport = new ArrayList<>();
+			dao.getServices()
+			   .stream()
+			   .filter(serviceRequest -> serviceRequest.getStatus().equals(status))
+			   .forEach(serviceRequest -> {
+				   ServiceReport serviceReport = new ServiceReport(serviceRequest.getServiceId(),
+						   										   serviceRequest.getBrand(),
+						   										   serviceRequest.getIssues(),
+						   										   serviceRequest.getServiceFee());
+				   servicesReport.add(serviceReport);
+			   });
+			if(servicesReport.isEmpty() || servicesReport == null)
+				throw new MobileServiceException("Service.NO_RECORDS_FOUND");
+			return servicesReport;
+		} catch (MobileServiceException exception) {
+			if(exception.getMessage().contains("Service"))
+				LogFactory.getLog(getClass()).error(exception.getMessage(), exception);
+			throw exception;
+		}
+		
 	}
 
 }

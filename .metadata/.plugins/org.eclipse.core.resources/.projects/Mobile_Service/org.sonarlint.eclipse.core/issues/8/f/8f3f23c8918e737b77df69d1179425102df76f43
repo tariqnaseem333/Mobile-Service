@@ -1,21 +1,12 @@
 
-a
-java:S2447"-Null is returned but a "Boolean" is expected.b 37a6259cc0c1dae299a7866489dff0bdh
-`
-java:S1172",Remove this unused method parameter "brand".b 8c4d3a946a1fcde2ded7e17651fd0ed7h
-a
-java:S2447"-Null is returned but a "Boolean" is expected.b 37a6259cc0c1dae299a7866489dff0bdh
-a
-java:S1172"-Remove this unused method parameter "issues".b fe5fe0415fc3e0ff4942d8454f363d2ch
-a
-java:S2447"-Null is returned but a "Boolean" is expected.b 37a6259cc0c1dae299a7866489dff0bdh
-e
-java:S1172"1Remove this unused method parameter "iMEINumber".b e3516e52ec859caf9877758bf0c3bb7dh
-a
-java:S2447"-Null is returned but a "Boolean" is expected.b 37a6259cc0c1dae299a7866489dff0bdh
-h
-java:S1172"4Remove this unused method parameter "contactNumber".b b67d22be88956bd9e28fbc97dd3829ech
-a
-java:S2447%"-Null is returned but a "Boolean" is expected.b 37a6259cc0c1dae299a7866489dff0bdh
-g
-java:S1172$"3Remove this unused method parameter "customerName".b f505f31bb148d4f04f25892ca8ad2268h
+‹	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8•Öûß1b 8d9c307cb7f3c4a32822a51922d1ceaah
+c
+java:S5411"(Use a primitive boolean expression here.8É¸Ñûß1b 16ec91ea570b86ab30c17ad128f3d85dh
+c
+java:S5411"(Use a primitive boolean expression here.8É¸Ñûß1b 573318f0c132f38b26b266efe13c1f90h
+c
+java:S5411"(Use a primitive boolean expression here.8É¸Ñûß1b 42e92f1816920f428d4d64c4c822ff8ah
+c
+java:S5411"(Use a primitive boolean expression here.8É¸Ñûß1b 86de6bf1f1457b2ab7fba8abfe52738eh
+c
+java:S5411"(Use a primitive boolean expression here.8É¸Ñûß1b a8ecc74a9751617735396b106cb64b06h

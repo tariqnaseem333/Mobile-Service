@@ -1322,3 +1322,352 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.google.gu
 2024-03-02 19:29:52,876 [Worker-39: Launching MobileServiceTester] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2024-03-02 19:29:52,877 [Worker-39: Launching MobileServiceTester] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
 2024-03-02 19:29:52,877 [Worker-39: Launching MobileServiceTester] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-03-02 19:30:09,952 [Worker-42: Launching MobileServiceTester] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-02 19:30:09,953 [Worker-42: Launching MobileServiceTester] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-03-02 19:30:09,955 [Worker-42: Launching MobileServiceTester] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-03-02 19:30:09,958 [Worker-42: Launching MobileServiceTester] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-02 19:30:09,959 [Worker-42: Launching MobileServiceTester] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-03-02 19:30:09,959 [Worker-42: Launching MobileServiceTester] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-03-02 19:32:00,938 [ForkJoinPool.commonPool-worker-10] INFO  j.exodus.util.CompressBackupUtil - Backup file "local_only_issue_backup2024-03-02-19-32-00.tar.gz" created.
+2024-03-03 16:23:33,703 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-03 16:23:34,709 [ForkJoinPool.commonPool-worker-1] INFO  o.s.s.s.o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sonarLintSpringAppConfig' of type [org.sonarsource.sonarlint.core.spring.SonarLintSpringAppConfig$$EnhancerBySpringCGLIB$$b80ae09a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-03 16:23:34,821 [ForkJoinPool.commonPool-worker-1] INFO  o.s.s.s.o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'provideClientEventBus' of type [com.google.common.eventbus.AsyncEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-03 16:23:35,780 [ForkJoinPool.commonPool-worker-1] INFO  jetbrains.exodus.io.FileDataWriter - Interruptible file channel will be used
+java.lang.reflect.InaccessibleObjectException: Unable to make public void sun.nio.ch.FileChannelImpl.setUninterruptible() accessible: module java.base does not "exports sun.nio.ch" to unnamed module @537d3b8a
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193)
+	at jetbrains.exodus.io.FileDataWriter$Companion$setUninterruptibleMethod$1.invoke(FileDataWriter.kt:188)
+	at jetbrains.exodus.io.FileDataWriter$Companion$setUninterruptibleMethod$1.invoke(FileDataWriter.kt:185)
+	at jetbrains.exodus.util.UnsafeHolder.doPrivileged$lambda-0(UnsafeHolder.kt:30)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at jetbrains.exodus.util.UnsafeHolder.doPrivileged(UnsafeHolder.kt:29)
+	at jetbrains.exodus.io.FileDataWriter.<clinit>(FileDataWriter.kt:185)
+	at jetbrains.exodus.io.FileDataReaderWriterProvider.newFileDataWriter(FileDataReaderWriterProvider.kt:48)
+	at jetbrains.exodus.io.FileDataReaderWriterProvider.newReaderWriter(FileDataReaderWriterProvider.kt:30)
+	at jetbrains.exodus.log.LogConfig.createReaderWriter(LogConfig.java:359)
+	at jetbrains.exodus.log.LogConfig.getReader(LogConfig.java:125)
+	at jetbrains.exodus.log.Log.<init>(Log.kt:52)
+	at jetbrains.exodus.env.Environments.newLogInstance(Environments.kt:117)
+	at jetbrains.exodus.env.Environments.newLogInstance(Environments.kt:81)
+	at jetbrains.exodus.env.Environments.newLogInstance(Environments.kt:77)
+	at jetbrains.exodus.env.Environments$newInstance$4.invoke(Environments.kt:46)
+	at jetbrains.exodus.env.Environments$newInstance$4.invoke(Environments.kt:46)
+	at jetbrains.exodus.env.Environments.prepare(Environments.kt:120)
+	at jetbrains.exodus.env.Environments.newInstance(Environments.kt:46)
+	at org.sonarsource.sonarlint.core.local.only.XodusLocalOnlyIssueStore.buildEntityStore(XodusLocalOnlyIssueStore.java:201)
+	at org.sonarsource.sonarlint.core.local.only.XodusLocalOnlyIssueStore.<init>(XodusLocalOnlyIssueStore.java:94)
+	at org.sonarsource.sonarlint.core.local.only.LocalOnlyIssueStorageService.get(LocalOnlyIssueStorageService.java:49)
+	at org.sonarsource.sonarlint.core.local.only.LocalOnlyIssueStorageService.purgeOldIssues(LocalOnlyIssueStorageService.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.sonarsource.sonarlint.shaded.org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.sonarsource.sonarlint.shaded.org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.sonarsource.sonarlint.shaded.org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.sonarsource.sonarlint.core.SonarLintBackendImpl.lambda$initialize$2(SonarLintBackendImpl.java:63)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+2024-03-03 16:23:35,785 [ForkJoinPool.commonPool-worker-1] WARN  jetbrains.exodus.io.FileDataWriter - Can't open directory channel. Log directory fsync won't be performed.
+2024-03-03 16:23:36,029 [ForkJoinPool.commonPool-worker-1] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: C:\Users\Tariq Naseem\.sonarlint\xodus-local-only-issue-store13960519594403475198
+2024-03-03 16:23:36,039 [ForkJoinPool.commonPool-worker-1] INFO  j.exodus.gc.GarbageCollector - Queueing ComputeUtilizationFromScratchJob
+2024-03-03 16:23:45,779 [Exodus shared background cleaner] INFO  j.exodus.gc.GarbageCollector - Started calculation of log utilization from scratch at C:\Users\Tariq Naseem\.sonarlint\xodus-local-only-issue-store13960519594403475198
+2024-03-03 16:23:45,802 [Exodus shared background cleaner] INFO  j.exodus.gc.GarbageCollector - Finished calculation of log utilization from scratch at C:\Users\Tariq Naseem\.sonarlint\xodus-local-only-issue-store13960519594403475198
+2024-03-03 16:36:24,065 [ForkJoinPool.commonPool-worker-15] INFO  j.exodus.util.CompressBackupUtil - Backup file "local_only_issue_backup2024-03-03-16-36-24.tar.gz" created.
+2024-09-16 18:50:55,283 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-09-16 18:55:26,705 [Worker-29: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:55:26,710 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:55:29,984 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:55:29,994 [Worker-29: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:55:29,995 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:55:29,995 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:55:57,763 [Worker-18: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:55:57,764 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:55:57,768 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:55:57,774 [Worker-18: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:55:57,775 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:55:57,775 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:56:23,954 [Worker-26: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:56:23,955 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:56:23,959 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:56:23,966 [Worker-26: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:56:23,967 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:56:23,967 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:56:48,145 [Worker-24: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:56:48,146 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:56:48,148 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:56:48,153 [Worker-24: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:56:48,155 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:56:48,155 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:56:58,343 [Worker-26: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:56:58,346 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:56:58,351 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:56:58,358 [Worker-26: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:56:58,360 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:56:58,361 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:57:09,680 [Worker-16: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:57:09,682 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:57:09,688 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:57:09,699 [Worker-16: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:57:09,702 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:57:09,703 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:57:21,801 [Worker-11: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:57:21,803 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:57:21,807 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:57:21,815 [Worker-11: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:57:21,817 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:57:21,817 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:57:35,331 [Worker-0: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:57:35,332 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:57:35,335 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:57:35,339 [Worker-0: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:57:35,340 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:57:35,340 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:57:47,622 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:57:47,623 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:57:47,626 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:57:47,631 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:57:47,633 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:57:47,633 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:58:06,777 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:58:06,779 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:58:06,782 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:58:06,787 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:58:06,788 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:58:06,788 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:58:28,296 [Worker-10: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:58:28,298 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:58:28,303 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:58:28,312 [Worker-10: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:58:28,314 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:58:28,315 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:58:36,837 [Worker-11: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:58:36,840 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:58:36,844 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:58:36,854 [Worker-11: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:58:36,857 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:58:36,857 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:58:56,894 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:58:56,895 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:58:56,898 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:58:56,903 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:58:56,904 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:58:56,904 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:59:13,343 [Worker-18: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:59:13,347 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:59:13,354 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:59:13,371 [Worker-18: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:59:13,375 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:59:13,376 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:59:25,665 [Worker-21: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:59:25,666 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:59:25,668 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:59:25,671 [Worker-21: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:59:25,672 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:59:25,673 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:59:39,794 [Worker-16: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:59:39,795 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:59:39,798 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:59:39,803 [Worker-16: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:59:39,804 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:59:39,804 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 18:59:54,163 [Worker-27: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:59:54,165 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 18:59:54,168 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 18:59:54,173 [Worker-27: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 18:59:54,175 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 18:59:54,175 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:00:08,342 [Worker-32: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:00:08,344 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 19:00:08,350 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:00:08,360 [Worker-32: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:00:08,363 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:00:08,363 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:01:00,591 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:01:00,593 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\main\resources
+2024-09-16 19:01:00,607 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:01:00,613 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:01:00,614 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:01:00,614 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:01:17,522 [Worker-31: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:01:17,536 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-16 19:01:17,539 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:01:17,543 [Worker-31: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:01:17,544 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:01:17,544 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:02:25,166 [Worker-27: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:02:25,169 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:02:25,186 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:02:25,194 [Worker-27: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:02:25,195 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:02:25,196 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:03:04,575 [Worker-26: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:03:04,578 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:03:04,582 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:03:04,586 [Worker-26: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:03:04,587 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:03:04,587 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:03:55,443 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:03:55,446 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:03:55,450 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:03:55,453 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:03:55,454 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:03:55,454 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:04:04,546 [Worker-21: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:04:04,549 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-16 19:04:04,552 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:04:04,556 [Worker-21: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:04:04,557 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:04:04,557 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:04:55,713 [Worker-29: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:04:55,717 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:04:55,722 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:04:55,727 [Worker-29: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:04:55,728 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:04:55,728 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:05:04,744 [Worker-16: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:05:04,747 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:05:04,752 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:05:04,757 [Worker-16: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:05:04,759 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:05:04,759 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:05:28,621 [Worker-4: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:05:28,627 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:05:28,636 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:05:28,645 [Worker-4: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:05:28,648 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:05:28,648 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:05:54,311 [Worker-27: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:05:54,313 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:05:54,316 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:05:54,338 [Worker-27: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:05:54,339 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:05:54,339 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:06:32,689 [Worker-1: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:06:32,694 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:06:32,703 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:06:32,712 [Worker-1: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:06:32,715 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:06:32,715 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:08:02,555 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:08:02,559 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:08:02,564 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:08:02,569 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:08:02,572 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:08:02,572 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:09:59,835 [Worker-14: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:09:59,842 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-16 19:09:59,847 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:09:59,856 [Worker-14: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:09:59,859 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:09:59,860 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:10:36,104 [Worker-29: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:10:36,107 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:10:36,112 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:10:36,117 [Worker-29: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:10:36,119 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:10:36,119 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:10:44,144 [Worker-29: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:10:44,150 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-16 19:10:44,154 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:10:44,163 [Worker-29: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:10:44,166 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:10:44,166 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:11:01,119 [Worker-14: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:01,123 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:11:01,128 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:11:01,134 [Worker-14: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:01,135 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:11:01,135 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:11:10,219 [Worker-14: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:10,221 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-16 19:11:10,223 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:11:10,225 [Worker-14: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:10,227 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:11:10,227 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:11:23,209 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:23,210 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:11:23,214 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:11:23,217 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:23,218 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:11:23,219 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:11:29,190 [Worker-19: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:29,196 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-16 19:11:29,201 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:11:29,209 [Worker-19: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:29,211 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:11:29,211 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:11:45,590 [Worker-29: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:45,592 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:11:45,597 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:11:45,602 [Worker-29: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:45,603 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:11:45,604 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:11:51,194 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:51,198 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-16 19:11:51,200 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:11:51,206 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:51,207 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:11:51,207 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:11:57,076 [Worker-16: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:57,079 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:11:57,081 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:11:57,084 [Worker-16: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:11:57,085 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:11:57,085 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:12:46,372 [Worker-21: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:12:46,375 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:12:46,379 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:12:46,382 [Worker-21: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:12:46,384 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:12:46,384 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:12:49,489 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:12:49,491 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:12:49,495 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:12:49,499 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:12:49,500 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:12:49,500 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:13:03,206 [Worker-21: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:13:03,212 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-16 19:13:03,216 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:13:03,224 [Worker-21: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:13:03,227 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:13:03,228 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
+2024-09-16 19:13:14,614 [Worker-21: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:13:14,617 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-16 19:13:14,620 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Test Source directory: C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\java added.
+2024-09-16 19:13:14,623 [Worker-21: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-16 19:13:14,624 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\test\resources
+2024-09-16 19:13:14,624 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project2_Mobile Service\Mobile_Service\src\verification\resources
